@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <table border="1">
+        <caption>Список групп студентов</caption>
+        <tr>
+            <th>Группа</th>
+            <th>Кол-во студентов</th>
+            <th>Староста</th>
+            <th></th>
+            <th></th>
+        </tr>
+        {%  for group in object_list %}
+            <tr>
+            <td><a href="detail_group.html">{{ group.name }}</a></td>
+            <td>{{ group.student_set.all.count }}</td>
+            <td>{{ group.starosta }}</td>
+            <td><a href="">Редактировать</a></td>
+            <td><a href="">Удалить</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
