@@ -1,4 +1,23 @@
 {% extends "base.html" %}
 
 {% block content %}
+    <table border="1">
+        <caption>Список студентов группы {{ group.name }}</caption>
+        <tr>
+            <th>ФИО</th>
+            <th>Дата рождения</th>
+            <th>Номер студ. билета</th>
+            <th></th>
+            <th></th>
+        </tr>
+        {% for student in group.student_set.all %}
+            <tr>
+            <td>{{ student.name }}</td>
+            <td>{{ student.birth_day }}</td>
+            <td>{{ student.ticket_number }}</td>
+            <td><a href="">Редактировать</a></td>
+            <td><a href="">Удалить</a></td>
+            </tr>
+        {% endfor %}
+    </table>
 {% endblock %}

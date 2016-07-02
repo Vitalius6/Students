@@ -12,7 +12,7 @@
         </tr>
         {%  for group in object_list %}
             <tr>
-            <td><a href="detail_group.html">{{ group.name }}</a></td>
+            <td><a href="{% url 'detail_group.html' group.id %}">{{ group.name }}</a></td>
             <td>{{ group.student_set.all.count }}</td>
             <td>{{ group.starosta }}</td>
             <td><a href="">Редактировать</a></td>

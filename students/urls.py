@@ -21,6 +21,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     # url(r'^/$', LoginView.as_view, name='login.html'),
     url(r'^$', ListGroups.as_view(), name='list_groups.html'),
-    url(r'^list_groups/(?P<pk>[\w-]+)/$', DetailGroup.as_view(), name='detail_group.html'),
+    url(r'^(?P<pk>[0-9]+)/$', DetailGroup.as_view(), name='detail_group.html'),
 
 ]
