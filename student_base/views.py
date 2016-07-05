@@ -24,14 +24,6 @@ class CreateGroup(generic.CreateView):
     success_url = '/'
     template_name = 'create_group.html'
 
-    def create_group(self, request):
-        template_name = 'create_group.html'
-        form = GroupForm(request.POST or None)
-        if form.is_valid():
-            form.save()
-            return redirect('/')
-        return render(request, template_name, {'form':form})
-
 
 class EditGroup(generic.UpdateView):
     model = Group
@@ -39,26 +31,12 @@ class EditGroup(generic.UpdateView):
     fields = ['name', 'starosta']
     template_name = 'edit_group.html'
 
-    def edit_group(self, request, pk):
-        template_name = 'edit_group.html'
-        pk = self.object.group_names.pk
-        group = get_object_or_404(Group, pk=pk)
-        form = GroupForm(request.POST or None, instance=group)
-        if form.is_valid():
-            form.save()
-            return redirect('/')
-        return render(request, template_name, {'form':form})
-
 
 class DeleteGroup(generic.DeleteView):
     model = Group
     success_url = '/'
     template_name = 'delete_group.html'
 
-    def delete_group(self, pk):
-        group = get_object_or_404(Group, pk=pk)
-        group.delete()
-        return redirect('/')
 
 class CreateStudent(generic.CreateView):
     model = Student

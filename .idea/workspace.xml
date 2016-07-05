@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f2916c9-083e-49a4-849d-745478af298d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/student_base/context_processors.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/student_base/templates/create_group.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/student_base/templates/delete_group.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/student_base/templates/edit_group.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/student_base/test_middleware.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/students.iml" afterPath="$PROJECT_DIR$/.idea/students.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student_base/forms.py" afterPath="$PROJECT_DIR$/student_base/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student_base/templates/base.html" afterPath="$PROJECT_DIR$/student_base/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student_base/templates/list_groups.html" afterPath="$PROJECT_DIR$/student_base/templates/list_groups.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student_base/views.py" afterPath="$PROJECT_DIR$/student_base/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/students/settings.py" afterPath="$PROJECT_DIR$/students/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/students/urls.py" afterPath="$PROJECT_DIR$/students/urls.py" />
     </list>
     <ignored path="students.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,10 +40,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/student_base/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.06676558">
               <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
@@ -97,10 +84,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="delete_group.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="delete_group.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/student_base/templates/delete_group.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.18461539">
+            <state vertical-scroll-proportion="-5.0">
               <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
               <folding />
             </state>
@@ -141,10 +128,10 @@
         <option value="$PROJECT_DIR$/student_base/templates/create_group.html" />
         <option value="$PROJECT_DIR$/student_base/templates/detail_group.html" />
         <option value="$PROJECT_DIR$/student_base/templates/edit_group.html" />
-        <option value="$PROJECT_DIR$/student_base/views.py" />
         <option value="$PROJECT_DIR$/students/urls.py" />
         <option value="$PROJECT_DIR$/student_base/templates/list_groups.html" />
         <option value="$PROJECT_DIR$/student_base/templates/delete_group.html" />
+        <option value="$PROJECT_DIR$/student_base/views.py" />
       </list>
     </option>
   </component>
@@ -957,16 +944,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/student_base/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/students/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -995,9 +972,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/student_base/templates/delete_group.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18461539">
+        <state vertical-scroll-proportion="-5.0">
           <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student_base/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06676558">
+          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
