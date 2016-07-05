@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Вы точно хотите удалить группу {{ group.name }}?</h1>
+    <form action="" method="post">
+        {% csrf_token %}
+        <button>Да, удалить</button>
+    </form>
+{% endblock %}

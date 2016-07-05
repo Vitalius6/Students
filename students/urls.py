@@ -15,12 +15,14 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from student_base.views import ListGroups, DetailGroup
+from student_base.views import ListGroups, DetailGroup, CreateStudent, CreateGroup, EditGroup, DeleteGroup
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     # url(r'^/$', LoginView.as_view, name='login.html'),
-    url(r'^$', ListGroups.as_view(), name='list_groups.html'),
-    url(r'^(?P<pk>[0-9]+)/$', DetailGroup.as_view(), name='detail_group.html'),
-
+    url(r'^$', ListGroups.as_view(), name='list_groups'),
+    url(r'^(?P<pk>[0-9]+)/$', DetailGroup.as_view(), name='detail_group'),
+    url(r'^create_group/$', CreateGroup.as_view(), name='create_group'),
+    url(r'^edit_group/(?P<pk>[0-9]+)$', EditGroup.as_view(), name='edit_group'),
+    url(r'^detele_group/(?P<pk>[0-9]+)$', DeleteGroup.as_view(), name='delete_group')
 ]
