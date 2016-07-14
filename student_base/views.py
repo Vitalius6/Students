@@ -1,7 +1,8 @@
 from django.views import generic
+from django.views.generic.edit import BaseUpdateView
+
 from models import Group, Student
 from django.contrib import auth
-from django.shortcuts import render, redirect, get_object_or_404
 from student_base.forms import GroupForm, StudentForm
 
 class ListGroups(generic.ListView):
@@ -39,8 +40,8 @@ class DeleteGroup(generic.DeleteView):
 
 
 class CreateStudent(generic.CreateView):
-    model = Student
-    fields = ['name', 'birth_day', 'ticket_number', 'group_names']
+    form_class = StudentForm
+    template_name = 'create_student.html'
 
     def get_success_url(self):
         pk = self.object.group_names.pk
@@ -50,6 +51,7 @@ class CreateStudent(generic.CreateView):
 class EditStudent(generic.UpdateView):
     model = Student
     fields = ['name', 'birth_day', 'ticket_number', 'group_names']
+    template_name = 'edit_student.html'
 
     def get_success_url(self):
         pk = self.object.group_names.pk
@@ -58,6 +60,7 @@ class EditStudent(generic.UpdateView):
 
 class DeleteStudent(generic.DeleteView):
     model = Student
+    template_name = 'delete_student.html'
 
     def get_success_url(self):
         pk = self.object.group_names.pk

@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Вы точно хотите удалить студента {{ student.name }}?</h1>
+    <form action="{% url 'delete_student' student.pk %}" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button>Да, удалить</button>
+    </form>
+{% endblock %}

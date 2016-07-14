@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Редактирование студента {{ student.name }}</h1>
+    <form action="{% url 'edit_student' student.pk %}" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button>Сохранить</button>
+    </form>
+{% endblock %}

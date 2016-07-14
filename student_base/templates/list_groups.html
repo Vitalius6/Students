@@ -16,7 +16,7 @@
             <td>{{ group.student_set.all.count }}</td>
             <td>{{ group.starosta }}</td>
             <td><a href="{% url 'edit_group' group.pk %}">Редактировать</a></td>
-            <td><a href="{% url 'delete_group' group.id %}">Удалить</a></td>
+            <td><a href="{% url 'delete_group' group.pk %}">Удалить</a></td>
             </tr>
         {% endfor %}
     </table>

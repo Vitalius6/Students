@@ -15,9 +15,11 @@
             <td>{{ student.name }}</td>
             <td>{{ student.birth_day }}</td>
             <td>{{ student.ticket_number }}</td>
-            <td><a href="">Редактировать</a></td>
-            <td><a href="">Удалить</a></td>
+            <td><a href="{% url 'edit_student' student.pk %}">Редактировать</a></td>
+            <td><a href="{% url 'delete_student' student.pk %}">Удалить</a></td>
             </tr>
         {% endfor %}
     </table>
+    <br>
+    <a href="{% url 'create_student' %}">Добавить студента</a>
 {% endblock %}

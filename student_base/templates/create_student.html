@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Создание студента в группе {{ group.name }}</h1>
+    <form action="{% url 'create_student' %}" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button>Создать</button>
+    </form>
+{% endblock %}
